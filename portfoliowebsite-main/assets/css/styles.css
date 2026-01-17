@@ -421,6 +421,7 @@ img {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
+  margin-top: -1rem;
 }
 
 .about__info-name {
@@ -435,6 +436,7 @@ img {
 .about__buttons {
   display: flex;
   justify-content: center;
+  margin-top: -1.2rem;
 }
 
 /*==================== SKILLS ====================*/
