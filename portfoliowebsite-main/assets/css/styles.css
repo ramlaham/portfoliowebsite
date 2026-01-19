@@ -331,7 +331,7 @@ img {
 }
 
 .home__scroll-button:hover {
-  transform: translateY(0.25rem);
+  transform: translateY(0.8rem);
 }
 
 .home__scroll-mouse {
@@ -381,6 +381,7 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+  margin-top: 0.25rem;
 }
 
 .button--small {
@@ -399,29 +400,88 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+.about.section {
+  padding-top: 17rem;
+  scroll-margin-top: -12rem;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about__img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .about__img {
   width: 200px;
-  border-radius: .5rem;
+  border-radius: 1rem;
   justify-self: center;
   align-self: center;
+  margin-top: -1rem;
+}
+
+.about__data {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: -2rem; /*ABOUT ME SPACE BETWEEN FIRST ROW OF TEXT*/
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0;
+}
+
+/* ABOUT ME DESCRIPTION COLUMN WIDTH */
+.about__column:nth-child(1) {
+  flex: 1;
+  margin-top: -1rem;
+}
+.about__column:nth-child(2) {
+  flex: 1;
+  margin-top: -1rem;
+}
+.about__column:nth-child(3) {
+  flex: 1;
+  margin-top: -1rem;
+}
+
+.about__column-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 0rem;
 }
 
 .about__description {
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: 0;
+  font-size: var(--small-font-size);
 }
 
 .about__info {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: 0;
+  gap: 1rem;
 }
 
 .about__info-title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
-  margin-top: -1rem;
+  margin-top: 0;
 }
 
 .about__info-name {
@@ -436,7 +496,20 @@ img {
 .about__buttons {
   display: flex;
   justify-content: center;
-  margin-top: -1.2rem;
+  margin-top: 0;
+}
+
+/* Mobile: stack columns vertically */
+@media screen and (max-width: 767px) {
+  .about__data {
+    flex-direction: column;
+  }
+  .about__column-title {
+    text-align: center;
+  }
+  .about__description {
+    text-align: center;
+  }
 }
 
 /*==================== SKILLS ====================*/
@@ -1170,7 +1243,7 @@ img {
     width: 350px;
   }
   .about__description {
-    text-align: initial;
+    text-align: center;
   }
   .about__info {
     justify-content: space-between;
