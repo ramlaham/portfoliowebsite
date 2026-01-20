@@ -32,7 +32,7 @@
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
-  /*========== Margenes Bottom ==========*/
+  /*========== Margin Bottom ==========*/
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
@@ -140,6 +140,7 @@ img {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
+  margin-top: 1rem;
 }
 
 .section__title, .section__subtitle {
@@ -515,6 +516,7 @@ img {
 /*==================== SKILLS ====================*/
 .skills__container {
   row-gap: 0;
+  margin-top: -1.5rem;
 }
 
 .skills__header {
@@ -554,11 +556,20 @@ img {
 
 .skills__titles {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
+  width: 100%;
+}
+
+.skills__right{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:10px;
 }
 
 .skills__name {
+  margin: 0%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
@@ -636,6 +647,10 @@ img {
 }
 
 /*==================== QUALIFICATION ====================*/
+.qualification__container {
+  margin-top: -2rem;
+}
+
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
@@ -659,7 +674,7 @@ img {
 
 .qualification__data {
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: 1.4fr max-content 1.4fr;
   column-gap: 1.5rem;
 }
 
@@ -672,11 +687,13 @@ img {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
+  max-width: 100%;
 }
 
 .qualification__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  margin-top: -1rem;
 }
 
 .qualification__rounder {
@@ -810,6 +827,8 @@ img {
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
   overflow: initial;
+  margin-top: -1.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .portfolio__content {
@@ -937,6 +956,7 @@ img {
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
+  margin-top: -2rem;
 }
 
 .contact__information {
@@ -1053,6 +1073,7 @@ img {
   text-align: center;
   color: var(--text-color-light);
   margin-top: var(--mb-3);
+  margin-left: -0.005rem;
 }
 
 .footer__title, .footer__subtitle, .footer__link, .footer__social {
@@ -1218,7 +1239,7 @@ img {
     margin-left: auto;
   }
   .change-theme {
-    margin: 0;
+    margin: 0 0 0 0.8rem;
   }
   .home__container {
     row-gap: 5rem;
